@@ -66,7 +66,7 @@ const data = {
                     description:"An Arsenal Home shirt 2023/2024",
                     category:"Football",
                     rating:"5 Stars",
-                    numReviews:"15",
+                    numReviews:"25",
                     countInStock:"25",
                     },
 
@@ -97,7 +97,7 @@ const data = {
                             numReviews:"15",
                             countInStock:"25",
                             },
-                            
+
     ],
 }
 
