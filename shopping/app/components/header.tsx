@@ -6,10 +6,20 @@ const Header = () => {
     <header>
         <nav>
     <div className="navbar justify-between bg-base-300">
-        <link href="/" className='btn btn-ghost text-lg'>
+        <Link href="/" className='btn btn-ghost text-lg'>
             JOMAZON
 
-        </link>
+        </Link>
+        <ul className='flex'>
+        <li>
+            <Link className="btn btn-ghost rouded-btn" href="/cart">Cart</Link>
+        </li>
+        </ul>
+        <ul className='flex'>
+        <li>
+            <Link className="btn btn-ghost rouded-btn" href="/cart">Sign In</Link>
+        </li>
+        </ul>
     </div>
     </nav>
     </header>
