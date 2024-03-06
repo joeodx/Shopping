@@ -21,6 +21,7 @@ export default function ProductItem({ product }: {product: Product}) {
         <Link href={`/product/${product.slug}`}>
           <h2 className="card-title font-normal">{product.name}</h2>
         </Link>
+        <p className="mb-2">{product.brand}</p>
           </div>
         </div>
   )

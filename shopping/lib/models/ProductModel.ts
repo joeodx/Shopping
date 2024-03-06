@@ -2,6 +2,7 @@ export type Product = {
     _id: string
     name: string
     slug:string
+    brand:string
     image:string
     banner:string
     price:string
