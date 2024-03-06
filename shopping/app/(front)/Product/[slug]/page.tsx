@@ -2,31 +2,31 @@ import data from "@/lib/models/data"
 import Link from "next/link"
 import Image from "next/image"
 
+
 export default function ProductDetails({ 
 params, 
 }: {
 params: { slug: string }
-
 }) {
-    const product = data.products.find((x)=>x.slug===params.slug)
-    if (!product) {
-        return <div>Product not found</div>
-    }
-  return <>
-  <div className="my-2">
-    <Link href="/">back to products</Link>
-  </div>
-  <div className="grid md:grid-cols-4 md:gap-3">
+
+  const product = data.products.find((x) => x.slug === params.slug)
+  if (!product) {
+    return  <div>Product not found</div>
+  }
+  return (
+   <>
+    <div className="my-2">
+      <Link href="/">back to products</Link>
+    </div>
+    <div className="grid md:grid-cols-4 md:gap-3">
     <div className="md:col-span-2">
       <Image 
         src={product.image}
         alt={product.name}
-        width={640}
-        height={640}
         sizes="100vw"
         style={{
-            width: "100%",
-            height: "auto",
+          width: "100%",
+          height: "auto",
         }}
       ></Image>
      </div>
@@ -40,6 +40,7 @@ params: { slug: string }
   </div>
   </div>
   </>
-  }
+  )
+}
 
 
