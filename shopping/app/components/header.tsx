@@ -8,11 +8,10 @@ const Header = () => {
     <div className="navbar justify-between bg-base-300">
         <Link href="/" className='btn btn-ghost text-lg'>
             JOMAZON
-
         </Link>
         <ul className='flex'>
         <li>
-            <Link className="btn btn-ghost rouded-btn" href="/cart">Cart</Link>
+            <Link className="btn btn-ghost rouded-btn" href="/cart">Basket</Link>
         </li>
         </ul>
         <ul className='flex'>
